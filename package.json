@@ -1,0 +1,20 @@
+{
+  "name": "node-mongo-backup-restore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "backup:build": "pnpm run build --filter=apps/backup && docker build -t backup-service -f apps/backup/Dockerfile .",
+    "backup:run": "docker run --rm backup-service",
+    "restore:build": "pnpm run build --filter=apps/restore && docker build -t restore-service -f apps/restore/Dockerfile .",
+    "restore:run": "docker run --rm restore-service"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

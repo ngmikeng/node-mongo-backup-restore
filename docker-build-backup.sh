@@ -1,0 +1,1 @@
+docker build -t node-mongo-backup-service -f apps/backup/Dockerfile .

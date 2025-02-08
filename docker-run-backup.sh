@@ -1,0 +1,1 @@
+docker run --rm node-mongo-backup-service

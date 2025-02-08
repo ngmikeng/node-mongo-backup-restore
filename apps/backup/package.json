@@ -1,0 +1,12 @@
+{
+  "name": "@node-mongo-backup-restore/backup",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@node-mongo-backup-restore/common": "workspace:*"
+  }
+}

@@ -1,0 +1,1 @@
+docker build -t node-mongo-restore-service -f apps/restore/Dockerfile .
