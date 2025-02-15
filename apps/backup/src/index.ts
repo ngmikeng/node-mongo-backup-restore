@@ -1,3 +1,3 @@
-import { Logger } from "@node-mongo-backup-restore/common";
+import { Logger, DateUtil } from '@node-mongo-backup-restore/common';
 
-Logger.log("Backup service running...");
+Logger.log('Backup service running...');
