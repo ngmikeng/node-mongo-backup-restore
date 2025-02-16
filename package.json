@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "build-watch": "tsc -w",
     "backup:build": "pnpm run build --filter=apps/backup && docker build -t backup-service -f apps/backup/Dockerfile .",
     "backup:run": "docker run --rm backup-service",
     "restore:build": "pnpm run build --filter=apps/restore && docker build -t restore-service -f apps/restore/Dockerfile .",
-    "restore:run": "docker run --rm restore-service"
+    "restore:run": "docker run --rm restore-service",
+    "common:build-watch": "pnpm --filter=@node-mongo-backup-restore/common run build-watch"
   },
   "keywords": [],
   "author": "",

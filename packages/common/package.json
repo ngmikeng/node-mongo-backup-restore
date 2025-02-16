@@ -4,13 +4,15 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build-watch": "tsc -w"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
     "nodemailer": "^6.10.0"
   },
   "devDependencies": {
+    "@types/node": "^22.13.4",
     "@types/nodemailer": "^6.4.17"
   }
 }
